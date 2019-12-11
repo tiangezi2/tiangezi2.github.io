@@ -1,0 +1,50 @@
+I"�<h1 id="项目展示">项目展示</h1>
+<ul>
+  <li>html+css+js
+    <ul>
+      <li>
+        <p><a href="https://tiangezi2.github.io/project/农场index/index.html">农场</a>
+ <img src="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=ed3884dc798da9775a228e79d138937c/1c950a7b02087bf4ad791006f8d3572c10dfcf4c.jpg" alt="" style="width: 300px;" /></p>
+      </li>
+      <li>
+        <p><a href="https://tiangezi2.github.io/project/花果茶index/index.html">花果茶</a></p>
+      </li>
+    </ul>
+  </li>
+  <li>JavaScript
+    <ul>
+      <li><a href="https://tiangezi2.github.io/project/抽奖大转盘/爱的魔力转圈圈.html">转盘抽奖</a></li>
+      <li><a href="https://tiangezi2.github.io/project/放大镜/放大镜.html">放大镜</a></li>
+      <li><a href="https://tiangezi2.github.io/project/手风琴/手风琴划过.html">手风琴</a></li>
+    </ul>
+  </li>
+  <li>jQuery
+    <ul>
+      <li><a href="">无缝轮播</a></li>
+      <li><a href="https://tiangezi2.github.io/project/选项卡/选项卡.html">选项卡</a></li>
+    </ul>
+  </li>
+  <li>BootStrap
+    <ul>
+      <li><a href="https:///tiangezi2.github.io/project/火箭index/index.html">火箭 </a></li>
+      <li><a href="https://tiangezi2.github.io/project/模特index/index.html">模特 </a></li>
+    </ul>
+  </li>
+  <li>CSS3
+    <ul>
+      <li><a href="https://tiangezi2.github.io/project/幽灵按钮/幽灵按钮.html">幽灵按钮</a></li>
+      <li><a href="https://tiangezi2.github.io/project/loading/悬浮LOADING.html">C3 动画</a></li>
+      <li><a href="https://tiangezi2.github.io/project/视差/茜与茜寻.html">视差微动话</a></li>
+    </ul>
+  </li>
+  <li>HTML5
+    <ul>
+      <li><a href="https://tiangezi2.github.io/project/音乐播放器带搜索/播放器.html">音乐播放器</a></li>
+    </ul>
+  </li>
+  <li>VUE.js</li>
+  <li>react.js</li>
+  <li>小程序</li>
+  <li>node.js</li>
+</ul>
+:ET
