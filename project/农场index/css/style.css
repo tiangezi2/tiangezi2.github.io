@@ -1,0 +1,546 @@
+body::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url('../images/to-top2.png') no-repeat;
+  position: fixed;
+  top: 85%;
+  left: 95%;
+  cursor: pointer;
+}
+header {
+  background: url("../images/banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: top left;
+  padding-top: 15px;
+}
+header .nav {
+  text-transform: capitalize;
+  background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  line-height: 60px;
+  color: white;
+  width: 1140px;
+  margin: 0 auto;
+}
+header .nav .memu {
+  float: left;
+}
+header .nav .memu li {
+  float: left;
+}
+header .nav .memu li a {
+  color: white;
+  text-decoration: none;
+}
+header .nav .memu li a:hover {
+  border-top: 4px solid yellow;
+  color: yellow;
+  transition: all 0.5;
+}
+header .nav .memu li:first-child a {
+  border-top: 4px solid yellow;
+  color: yellow;
+  margin-left: 15px;
+}
+header .nav .memu li:after {
+  content: "/";
+  margin: 15px;
+}
+header .nav .memu li:last-child::after {
+  content: none;
+}
+header .nav form.search {
+  float: right;
+  margin-right: 15px;
+  position: relative;
+}
+header .nav form.search input:first-child {
+  width: 200px;
+  background: transparent;
+  color: white;
+  padding: 8px 10px;
+  outline: none;
+  border: 1px solid white;
+}
+header .nav form.search input:first-child::placeholder {
+  color: white;
+}
+header .nav form.search input:last-child {
+  height: 22px;
+  width: 22px;
+  background: url("../images/search.png") no-repeat center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 8px;
+  text-indent: -10em;
+}
+header div.banner h1 {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  margin: 160px auto;
+  width: 290px;
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  line-height: 1.5em;
+}
+header ul.grid {
+  width: 1140px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: 130px;
+}
+header ul.grid li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+header ul.grid li .card {
+  margin: 0 15px;
+  padding: 20px;
+  background-color: #16a677;
+  color: white;
+}
+header ul.grid li .card img {
+  border: white solid 8px;
+  border-radius: 50%;
+  padding: 15px;
+}
+header ul.grid li .card img:hover {
+  transform: rotateY(360deg);
+  transition: all 0.5s;
+}
+header ul.grid li .card h3 {
+  line-height: 2em;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+header ul.grid li .card p {
+  font-size: 14px;
+  line-height: 1.8em;
+}
+section.one {
+  background: #eeeeee;
+}
+section.one div.about {
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 80px;
+}
+section.one div.about h3 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 3em;
+}
+section.one div.about img {
+  float: left;
+  width: 40%;
+}
+section.one div.about ul.text {
+  float: right;
+  width: 60%;
+  color: #555555;
+}
+section.one div.about ul.text p {
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+section.one div.about ul.text:last-child p {
+  padding-top: 15px;
+}
+section.one div.about::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.two {
+  background: #333333;
+  padding-bottom: 80px;
+}
+section.two div.services {
+  width: 1140px;
+  margin: 0 auto;
+}
+section.two div.services h3 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 3em;
+  color: white;
+}
+section.two div.services ul.card li {
+  background: #333333;
+  float: left;
+  width: 30%;
+  margin: 15px;
+  text-align: center;
+}
+section.two div.services ul.card li img {
+  border: 1px transparent solid;
+  background: #16a677;
+  border-radius: 15%;
+  padding: 5px 10px;
+}
+section.two div.services ul.card li img:hover {
+  background: orange;
+}
+section.two div.services ul.card li h4 {
+  line-height: 2em;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: white;
+}
+section.two div.services ul.card li p {
+  font-size: 14px;
+  line-height: 1.8em;
+  color: #999999;
+}
+section.two div.services ul.card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.three {
+  background: #eeeeee;
+}
+section.three div.Works {
+  padding-bottom: 4em;
+  width: 1140px;
+  margin: 0 auto;
+}
+section.three div.Works h3 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 3em;
+}
+section.three div.Works ul li {
+  float: left;
+  width: 25%;
+  position: relative;
+}
+section.three div.Works ul li img {
+  display: block;
+  width: 100%;
+}
+section.three div.Works ul li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/magnify.png) no-repeat center;
+  box-shadow: 0 0 10px 0 white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+section.three div.Works ul li:hover::after {
+  transform: scale(1);
+  z-index: 9;
+}
+section.three div.Works ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.four {
+  background: #ffffff;
+}
+section.four div.News {
+  width: 1140px;
+  margin: 0 auto;
+}
+section.four div.News h3 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 3em;
+  text-indent: 15px;
+}
+section.four div.News ul.card li {
+  float: left;
+  width: 30%;
+  padding: 0 15px;
+}
+section.four div.News ul.card li img {
+  width: 100%;
+}
+section.four div.News ul.card li h4 {
+  line-height: 2em;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+section.four div.News ul.card li p {
+  font-size: 14px;
+  line-height: 1.8em;
+  color: #999999;
+  margin: 5px 0 10px 0;
+}
+section.four div.News ul.card li p a {
+  text-decoration: none;
+  color: black;
+}
+section.four div.News ul.card li a.link {
+  background: orange;
+  color: orange;
+  width: 100px;
+  padding: 10px;
+  display: block;
+  margin: 40px 5px;
+  position: relative;
+  text-align: center;
+}
+section.four div.News ul.card li a.link::before {
+  content: "Read More";
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  font-weight: 600;
+  z-index: 2;
+}
+section.four div.News ul.card li a.link::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #16a667;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+section.four div.News ul.card li a.link:hover::after {
+  transform: rotateX(90deg);
+}
+section.four div.News::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.five {
+  background: #3f454d;
+}
+section.five::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.five div.thank {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+section.five div.thank div.events {
+  padding: 0 15px;
+  float: left;
+  width: 30%;
+}
+section.five div.thank div.events h3 {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 30px;
+}
+section.five div.thank div.events div.name {
+  margin-top: 15px;
+}
+section.five div.thank div.events div.name::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.five div.thank div.events div.name div.img {
+  float: left;
+  width: 21%;
+}
+section.five div.thank div.events div.name div.img img {
+  width: 100%;
+}
+section.five div.thank div.events div.name div.synopsis {
+  float: left;
+  width: 70%;
+  margin-left: 15px;
+}
+section.five div.thank div.events div.name div.synopsis a {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+section.five div.thank div.events div.name div.synopsis a:hover {
+  color: orange;
+}
+section.five div.thank div.events div.name div.synopsis p {
+  font-size: 14px;
+  line-height: 1.8em;
+  color: #999999;
+}
+section.five div.thank div.categories {
+  float: left;
+  width: 30%;
+  padding: 0 15px;
+}
+section.five div.thank div.categories h3 {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 30px;
+}
+section.five div.thank div.categories ul li {
+  font-size: 14px;
+  line-height: 1.8em;
+  color: #999999;
+  padding: 6px 24px;
+  background: url("../images/list-arrow.png") no-repeat 0 15px;
+  cursor: pointer;
+}
+section.five div.thank div.categories ul li:hover {
+  color: orange;
+}
+section.five div.thank div.contact {
+  float: left;
+  width: 30%;
+  padding: 0 15px;
+}
+section.five div.thank div.contact h3 {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 30px;
+}
+section.five div.thank div.contact ul.phone {
+  margin-bottom: 32px;
+}
+section.five div.thank div.contact ul.phone li.picture {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: url("../images/img-sprite1.png") no-repeat -220px 0;
+}
+section.five div.thank div.contact ul.phone li {
+  float: left;
+}
+section.five div.thank div.contact ul.phone li p {
+  font-size: 14px;
+  color: #999999;
+}
+section.five div.thank div.contact ul.phone::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.five div.thank div.contact ul.address {
+  margin-bottom: 32px;
+}
+section.five div.thank div.contact ul.address li.picture2 {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: url("../images/img-sprite1.png") no-repeat -260px 0;
+}
+section.five div.thank div.contact ul.address li {
+  float: left;
+}
+section.five div.thank div.contact ul.address li p {
+  font-size: 14px;
+  color: #999999;
+}
+section.five div.thank div.contact ul.address::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.five div.thank div.contact ul.mail {
+  margin-bottom: 32px;
+}
+section.five div.thank div.contact ul.mail li.picture3 {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: url("../images/img-sprite1.png") no-repeat -300px 0;
+}
+section.five div.thank div.contact ul.mail li {
+  float: left;
+}
+section.five div.thank div.contact ul.mail li p {
+  font-size: 14px;
+  color: #999999;
+  transition: all 0.5s;
+}
+section.five div.thank div.contact ul.mail li p:hover {
+  color: orange;
+}
+section.five div.thank div.contact ul.mail::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.five div.thank::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+footer {
+  padding: 50px;
+  background: #eeeeee;
+}
+footer div.end {
+  text-align: center;
+  width: 1140px;
+  margin: 0 auto;
+}
+footer div.end ul.icon {
+  text-align: center;
+}
+footer div.end ul.icon li {
+  margin-left: 15px;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background: url("../images/img-sprite1.png") no-repeat;
+  cursor: pointer;
+}
+footer div.end ul.icon li:nth-child(2) {
+  background-position-x: -55px;
+}
+footer div.end ul.icon li:nth-child(3) {
+  background-position-x: -110px;
+}
+footer div.end ul.icon li:nth-child(4) {
+  background-position-x: -165px;
+}
+footer div.end ul.icon li:hover {
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+footer div.end ul.mune li {
+  display: inline-block;
+  margin: 0 10px 10px 10px;
+}
+footer div.end ul.mune li a {
+  margin: 15px;
+  text-decoration: none;
+  line-height: 5em;
+  text-align: center;
+  color: #333333;
+}
+footer div.end ul.mune::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+footer div.end p a {
+  font-size: 19px;
+  text-decoration: none;
+  color: #16a667;
+  margin: 0 6px;
+}
+/*# sourceMappingURL=./style.css.map */

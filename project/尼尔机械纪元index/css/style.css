@@ -1,0 +1,105 @@
+#all {
+  width: 100%;
+  height: 100%;
+}
+#all header {
+  width: 100%;
+  height: 80px;
+  background: white;
+  position: absolute;
+  z-index: 2;
+}
+#all header div.stage {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#all header #main {
+  float: left;
+}
+#all header #main > a {
+  float: left;
+}
+#all header #nav {
+  float: right;
+}
+#all header #nav > li {
+  float: left;
+  position: relative;
+}
+#all header #music {
+  float: left;
+  width: 14px;
+  height: 14px;
+  background: url("../img/musicon.gif");
+}
+#all header div.up {
+  position: absolute;
+  top: 0;
+}
+#all section ul#back {
+  height: 100vh;
+  overflow: hidden;
+}
+#all section ul#back li {
+  position: relative;
+}
+#all section ul#back #home {
+  background: url("../img/bg1.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-top: 80px;
+}
+#all section ul#back #home div.homeCarousel {
+  width: 1100px;
+  height: 520px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 25px;
+}
+#all section ul#back #home div.homeCarousel ul.homeCarouselUl {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+}
+#all section ul#back #home div.homeCarousel ul.homeCarouselUl li {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+}
+#all section ul#back #home div.homeCarousel ul.homeCarouselUl li:nth-child(1) {
+  background-image: url('../img/home2.jpg');
+}
+#all section ul#back #home div.homeCarousel ul.homeCarouselUl li:nth-child(2) {
+  background-image: url('../img/home3.jpg');
+}
+#all section ul#back #home div.homeCarousel ul.homeCarouselUl li:nth-child(3) {
+  background-image: url('../img/home4.jpg');
+}
+#all section ul#back #home div.homeCarousel ul.homeCarouselUl li:nth-child(4) {
+  background-image: url('../img/home1.jpg');
+}
+#all section ul#back #course {
+  background: url("../img/bg3.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+#all section ul#back #works {
+  background: url("../img/bg4.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+#all section ul#back #about {
+  background: url("../img/bg5.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+#all section ul#back #partner {
+  background: url("../img/team.png") no-repeat;
+  background-size: cover;
+  height: 100%;
+}

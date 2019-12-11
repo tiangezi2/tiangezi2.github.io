@@ -1,0 +1,597 @@
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+header#nav nav.navbar {
+  background: white;
+  margin-bottom: 0;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+header#nav nav.navbar .container-fluid {
+  padding: 14px 48px;
+}
+header#nav nav.navbar .container-fluid div.navbar-header a {
+  float: left;
+  display: initial;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #fc427b;
+  font-family: "Srisakdi", cursive;
+}
+header#nav nav.navbar .container-fluid .navbar-collapse ul {
+  padding: 0;
+  list-style: none;
+}
+header#nav nav.navbar .container-fluid .navbar-collapse ul li:hover a {
+  background: none;
+}
+header#nav nav.navbar .container-fluid .navbar-collapse ul li a {
+  color: #4c4c4c;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+}
+header#nav nav.navbar .container-fluid .navbar-collapse ul li a:hover {
+  color: #fc427b;
+}
+header#nav nav.navbar .container-fluid .navbar-collapse ul li a.last {
+  padding-right: 0;
+}
+header#nav nav.navbar .container-fluid .navbar-collapse ul li a.active {
+  color: #fc427b;
+}
+header#nav nav.navbar .container-fluid .navbar-collapse ul li ul.dropdown-menu {
+  background: #333333;
+  border-radius: 5px;
+  padding: 10px;
+  left: 0;
+}
+header#nav nav.navbar .container-fluid .navbar-collapse ul li ul.dropdown-menu li a {
+  color: white;
+}
+header#nav nav.navbar .container-fluid .navbar-collapse ul li ul.dropdown-menu li a:hover {
+  color: #333333;
+  background: white;
+}
+section#home div.carousel ol.carousel-indicators li {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 4px;
+  padding: 4px;
+  background: #fc427b;
+  border: 4px solid #fff;
+}
+section#home div.carousel ol.carousel-indicators li.active {
+  background: white;
+}
+section#home div.carousel-inner div.item img {
+  width: 100%;
+}
+section#home div.carousel-inner div.item h5 {
+  font-weight: 400;
+  color: #000;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+section#home div.carousel-inner div.item h3 {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 56px;
+}
+section#home div.carousel-inner div.item a {
+  padding: 12px 25px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #fff;
+  background: #fc427b;
+  margin-top: 48px;
+  transition: 0.5s all;
+}
+section#home div.carousel-inner div.item a:hover {
+  background: white;
+  color: #333333;
+}
+section#home div.carousel-inner div.item .row {
+  text-align: right;
+  color: white;
+  position: relative;
+  top: -220px;
+  left: 365px;
+  transition: all 0.3s;
+}
+section#about {
+  padding-top: 48px;
+}
+section#about .container {
+  padding: 16px 15px 0px;
+}
+section#about .container .row .text2 {
+  padding: 48px 15px;
+}
+section#about .container .row .text2 h3 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+section#about .container .row .text2 h4 {
+  margin: 16px 0px 48px;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-family: initial;
+  color: #464646;
+  font-style: italic;
+}
+section#about .container .row .text2 .row .chunk2 span {
+  font-size: 28px;
+  color: #fff;
+  border-radius: 50%;
+  background: #fc427b;
+  padding: 1em;
+}
+section#about .container .row .text2 .row .chunk2 h5 {
+  margin: 24px 0px 16px;
+  letter-spacing: 1px;
+  color: #343a40;
+  font-size: 20px;
+}
+section#about .container .row .text2 .row .chunk2 p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  color: #999;
+  font-family: "Sintony", sans-serif;
+}
+section#about .container .row img {
+  width: 100%;
+  height: auto;
+}
+section#heading {
+  background: #fc427b;
+}
+section#heading .container {
+  padding: 48px 0;
+}
+section#heading .container .row {
+  padding: 48px 15px;
+}
+section#heading .container .row div.chunk3 {
+  color: white;
+  text-align: center;
+}
+section#heading .container .row div.chunk3 span {
+  line-height: 90px;
+  height: 90px;
+  width: 90px;
+  font-size: 29px;
+  border: 2px white solid;
+  border-radius: 50%;
+}
+section#heading .container .row div.chunk3 h4 {
+  margin: 48px 0 16px 0;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+section#heading .container .row div.chunk3 p {
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-size: 13px;
+}
+section#blog {
+  padding: 48px 0;
+}
+section#blog .container {
+  padding: 48px 0;
+}
+section#blog .container .row div.text4 {
+  margin-bottom: 48px;
+  text-align: center;
+}
+section#blog .container .row div.text4 h3 {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+section#blog .container .row div.text4 p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  color: #999;
+}
+section#blog .container .row div.chunk4 div.top4 {
+  position: relative;
+}
+section#blog .container .row div.chunk4 div.top4 a img {
+  height: auto;
+  width: 100%;
+}
+section#blog .container .row div.chunk4 div.top4 h3 {
+  font-size: 26px;
+  color: #fff;
+  background: #38d2fe;
+  padding: 10px 25px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+section#blog .container .row div.chunk4 div.top4 h3 span {
+  font-weight: 100;
+  font-size: 16px;
+  display: block;
+}
+section#blog .container .row div.chunk4 div.bottom4 {
+  padding-top: 30px;
+}
+section#blog .container .row div.chunk4 div.bottom4 h4 {
+  font-size: 23px;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+section#blog .container .row div.chunk4 div.bottom4 a {
+  color: #999;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+section#blog .container .row div.chunk4 div.bottom4 a span {
+  color: #ff4f81;
+}
+section#blog .container .row div.chunk4 div.bottom4 a.nth2 {
+  margin: 0 15px;
+}
+section#blog .container .row div.chunk4 div.bottom4 p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  color: #999;
+  margin-top: 15px;
+}
+section#fashion {
+  height: 300px;
+  background: url("../images/bg2.jpg") no-repeat top;
+  background-size: cover;
+  padding: 48px 0;
+}
+section#fashion .container {
+  padding: 48px 15px;
+}
+section#fashion .container .row .text5 h4 {
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+}
+section#fashion .container .row .text5 h3 {
+  font-weight: 800;
+  font-size: 32px;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+}
+section#fashion .container .row .text5 p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+}
+section#gallery .container {
+  padding: 48px 0;
+}
+section#gallery .container .row {
+  padding: 48px 0;
+}
+section#gallery .container .row .text6 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+section#gallery .container .row .text6 h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+section#gallery .container .row .text6 p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  color: #999;
+  font-family: "Sintony", sans-serif;
+}
+section#gallery .container .row .chunk6 a img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+  margin-bottom: 24px;
+}
+section#newsletter {
+  background: url(../images/bg3.jpg) no-repeat center;
+  background-size: cover;
+  padding: 48px 0;
+}
+section#newsletter .container {
+  padding: 48px 15px;
+}
+section#newsletter .container .row .text7 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+section#newsletter .container .row .text7 h3 {
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 32px;
+}
+section#newsletter .container .row .text7 p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  color: #999;
+  font-family: "Sintony", sans-serif;
+  color: #e0e0e0;
+}
+section#newsletter .container .row form .row .chunk7 {
+  margin-bottom: 16px;
+}
+section#newsletter .container .row form .row .chunk7 input[type="text"] {
+  padding: 24px;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+section#newsletter .container .row form .row .chunk7 input[type="email"] {
+  padding: 24px;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+section#newsletter .container .row form .row .chunk7 input[type="submit"] {
+  background: #38d2fe;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 24px;
+  line-height: 3px;
+}
+section#contact {
+  padding: 48px 0;
+}
+section#contact .container {
+  padding: 48px 15px;
+}
+section#contact .container .row .text8 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+section#contact .container .row .text8 h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-family: "Poppins", sans-serif;
+}
+section#contact .container .row .text8 p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  color: #999;
+  font-family: "Sintony", sans-serif;
+}
+section#contact .container .row .ito {
+  box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+}
+section#contact .container .row .ito h4 {
+  margin-bottom: 16px;
+  font-size: 23px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  color: #38d2fe;
+  font-weight: 600;
+}
+section#contact .container .row .ito p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  color: #999;
+  font-family: "Sintony", sans-serif;
+}
+section#contact .container .row .ito2 {
+  margin: 36px 0;
+}
+section#contact .container .row .endocyst {
+  margin-bottom: 16px;
+}
+section#contact .container .row .endocyst input,
+section#contact .container .row .endocyst textarea {
+  outline: none;
+  color: black;
+  padding: 20px 10px;
+  font-size: 15px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-bottom: solid 1px #828282;
+  margin-bottom: 16px;
+}
+section#contact .container .row .endocyst input:focus,
+section#contact .container .row .endocyst textarea:focus {
+  outline: #bfdeff 3px solid;
+}
+section#contact .container .row .endocyst input::placeholder,
+section#contact .container .row .endocyst textarea::placeholder {
+  color: #6c7581;
+  font-family: "Poppins", sans-serif;
+}
+section#contact .container .row .endocyst textarea {
+  height: 210px;
+}
+section#contact .container .row input[type="submit"] {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 12px 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 1.7em;
+  width: 100%;
+  background: #fc427b;
+}
+footer#footer {
+  background: #212020;
+  padding: 48px 0;
+}
+footer#footer .container {
+  padding: 48px 15px;
+}
+footer#footer .container .row h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  margin-bottom: 48px;
+}
+footer#footer .container .row h4 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: white;
+  margin-bottom: 8px;
+}
+footer#footer .container .row p {
+  color: #ababab;
+  font-size: 14px;
+}
+footer#footer .container .row p a {
+  color: #ababab;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+footer#footer .container .row .midd {
+  margin: 24px 0;
+}
+footer#footer .container .row ul a {
+  color: #ababab;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+footer#footer div.up {
+  text-align: center;
+}
+#myModal .modal-body {
+  position: relative;
+}
+#myModal .modal-body img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+#myModal .modal-footer .span1 {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 50%;
+  height: 80%;
+}
+#myModal .modal-footer .span2 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 50%;
+  height: 80%;
+}
+@media (min-width: 768px) {
+  section#heading .container .row div span {
+    line-height: 80px;
+    height: 80px;
+    width: 80px;
+    font-size: 29px;
+  }
+  section#heading .container .row div h4 {
+    margin: 24px 0 16px 0;
+  }
+  section#heading .container .row div p {
+    font-size: 13px;
+  }
+  section#fashion {
+    min-height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  section#heading .container .row div p {
+    font-size: 14px;
+  }
+  section#fashion {
+    min-height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  section#heading .container .row div span {
+    line-height: 90px;
+    height: 90px;
+    width: 90px;
+    font-size: 30px;
+  }
+  section#heading .container .row div h4 {
+    margin: 48px 0 16px 0;
+  }
+  section#heading .container .row div p {
+    font-size: 15px;
+  }
+  section#fashion {
+    min-height: 600px;
+  }
+}
