@@ -1,0 +1,52 @@
+---
+layout: page
+title: 我的项目
+---
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+header img{
+    width: 100%;
+    height: 300px;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="stage">
+      <header>
+        <img src="/images/new/bg.png" alt="" />
+      </header>
+      <section>
+        <h3>排版项目</h3>
+        <ul>
+          <li>
+              <a href="https://tiangezi2.github.io/project/农场index/index.html">
+            <div>
+              <img src="/images/new/1.jpg" alt="" />
+            </div>
+            <div>
+              <h4>农场</h4>
+              <p>内容：html+css排版 少量js</p>
+            </div>
+          </li>
+          <li>
+                <a href="https://tiangezi2.github.io/project/花果茶index/index.html">
+            <div>
+              <img src="/images/new/2.jpg" alt="" />
+            </div>
+            <div>
+              <p>花果茶</p>
+              <p>内容：html+css排版 少量js</p>
+            </div>
+        </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
