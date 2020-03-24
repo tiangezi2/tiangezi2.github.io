@@ -1,0 +1,4 @@
+<!--pages/search/search.wxml-->
+<mp-searchbar bindselectresult="selectResult" cancel="{{cancel}}" placeholder="{{placeholder}}" focus="{{focus}}" search="{{search}} "></mp-searchbar>
+<view>热门搜索</view>
+<text wx:for="{{recommendKeywords}}" bindtap="navigateToVideo" data-postid="{{item.kw}}">{{item.kw}}</text>

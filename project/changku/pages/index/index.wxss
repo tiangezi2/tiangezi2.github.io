@@ -1,0 +1,17 @@
+/**index.wxss**/
+
+.weui-search-bar {
+  background: black;
+}
+
+.weui-search-bar__label {
+  background: #666;
+}
+
+.weui-icon-search {
+  color: white;
+}
+
+.weui-search-bar__text {
+  color: white;
+}

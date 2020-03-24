@@ -1,0 +1,10 @@
+<!--pages/channel/channel.wxml-->
+
+<view class="listData">
+  <image wx:for="{{listData}}" class="img" mode="widthFix" src="{{item.icon}} " bindtap="navigateToVideo" data-postid="{{item.cateid}}">
+    <view class="text">
+      <text class="name">{{item.catename}}</text>
+      <view class="line"></view>
+    </view>
+  </image>
+</view>

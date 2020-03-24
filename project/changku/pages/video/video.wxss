@@ -1,0 +1,44 @@
+/* pages/video/video.wxss */
+
+.title {
+  text-align: center;
+}
+
+.cate {
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.intro {
+  padding: 0 15px;
+  font-size: 15px;
+}
+
+.name {
+  font-weight: 900;
+}
+
+.list {
+  overflow-x: scroll;
+}
+
+.image {
+  width: 140px;
+  margin: 0 10px 0 0;
+  position: relative;
+}
+
+.time {
+  position: absolute;
+  bottom: 2px;
+  left: 5px;
+  color: white;
+  font-size: 12px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
