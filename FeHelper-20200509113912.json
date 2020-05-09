@@ -1,0 +1,184 @@
+{
+    "data": [
+        {
+            "cate_type": "1",
+            "catename": "热门",
+            "alias": "Hot",
+            "tab": "hot",
+            "icon": "http://cs.vmovier.com/Uploads/Activity/2017-06-22/594ba107049cb.jpg"
+        },
+        {
+            "cate_type": "1",
+            "catename": "专题",
+            "alias": "Album",
+            "tab": "album",
+            "icon": "http://cs.vmovier.com/Uploads/Activity/2017-06-22/594ba139cc8f9.jpg"
+        },
+        {
+            "cate_type": "1",
+            "catename": "自制",
+            "alias": "Series",
+            "tab": "Series",
+            "icon": "http://cs.vmovier.com/Uploads/Activity/2017-07-07/595ef7db062e9.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "1",
+            "cateid": "6",
+            "catename": "创意",
+            "alias": "Idea",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9e1cb1f1b.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "2",
+            "cateid": "7",
+            "catename": "励志",
+            "alias": "Inspiration",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9facf35be.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "3",
+            "cateid": "8",
+            "catename": "搞笑",
+            "alias": "Fun",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9f143f5f3.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "4",
+            "cateid": "13",
+            "catename": "广告",
+            "alias": "Ad",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9ecdb788a.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "5",
+            "cateid": "92",
+            "catename": "汽车",
+            "alias": "QICHE",
+            "icon": "https://cs.vmovier.com/Uploads/Series/2018-08-31/5b88a551bad04.png"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "6",
+            "cateid": "11",
+            "catename": "旅行",
+            "alias": "Travel",
+            "icon": "https://cs.vmovier.com/Uploads/Series/2018-11-15/5becc5ff55398.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "7",
+            "cateid": "12",
+            "catename": "爱情",
+            "alias": "Love",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9f27d09e8.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "8",
+            "cateid": "17",
+            "catename": "剧情",
+            "alias": "Story",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9f41dd4bd.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "9",
+            "cateid": "10",
+            "catename": "运动",
+            "alias": "Sports",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9f649bc25.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "10",
+            "cateid": "16",
+            "catename": "动画",
+            "alias": "Animation",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9f9a7e85d.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "11",
+            "cateid": "18",
+            "catename": "音乐",
+            "alias": "Mv",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9fc863701.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "12",
+            "cateid": "23",
+            "catename": "科幻",
+            "alias": "Fiction",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9fe51ea93.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "13",
+            "cateid": "43",
+            "catename": "预告",
+            "alias": "Trailer",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594ba0034c07d.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "14",
+            "cateid": "24",
+            "catename": "纪录",
+            "alias": "Record",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594ba01ab810c.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "15",
+            "cateid": "44",
+            "catename": "混剪",
+            "alias": "Cut",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-07-07/595ef827e208c.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "16",
+            "cateid": "104",
+            "catename": "游戏",
+            "alias": "game",
+            "icon": "https://cs.vmovier.com/Uploads/Series/2019-11-06/5dc279005d589.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "17",
+            "cateid": "88",
+            "catename": "时尚",
+            "alias": "Shishang",
+            "icon": "https://cs.vmovier.com/Uploads/Series/2018-05-25/5b07e4a2e28f8.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "18",
+            "cateid": "45",
+            "catename": "实验",
+            "alias": "Experimental",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594ba04be6624.jpg"
+        },
+        {
+            "cate_type": "0",
+            "orderid": "19",
+            "cateid": "78",
+            "catename": "生活",
+            "alias": "Lifeness",
+            "icon": "http://cs.vmovier.com/Uploads/Series/2017-06-22/594ba05e28ba4.jpg"
+        },
+        {
+            "cate_type": "1",
+            "catename": "幕后",
+            "alias": "Backstage",
+            "tab": "Backstage",
+            "icon": "http://cs.vmovier.com/Uploads/Activity/2017-07-07/595ef79798104.jpg"
+        }
+    ]
+}
