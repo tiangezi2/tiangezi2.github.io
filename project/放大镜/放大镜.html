@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<style>
+			body {
+				overflow: hidden;
+			}
+			div.girl {
+				width: 1000px;
+				margin: 50px auto;
+				position: relative;
+			}
+			div img {
+				width: 100%;
+				border-radius: 10px;
+			}
+			.but {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				background: url("./123.jpg") no-repeat;
+				position: absolute;
+				top: 0;
+				text-align: center;
+				line-height: 200px;
+			}
+			.but::after {
+				content: "+";
+				color: white;
+				font-size: 20px;
+			}
+			.but:hover {
+				cursor: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="girl">
+			<img src="./123.jpg" alt="" />
+			<div class="but"></div>
+		</div>
+		<script>
+			var girl = document.querySelector(".girl");
+			var but = document.querySelector(".but");
+			var beishu = 2;
+			var butW = but.offsetWidth;
+			var butH = but.offsetHeight;
+			but.style.backgroundSize = girl.offsetWidth * beishu + "px auto";
+			girl.onmousemove = function(t) {
+				but.style.opacity = "1";
+				var x = t.pageX - girl.offsetLeft;
+				var y = t.pageY - girl.offsetTop;
+				if (x < 0 || (y < 0) | (x > girl.offsetWidth) | (y > girl.offsetHeight)) {
+					but.style.opacity = "0";
+				}
+				but.style.left = x - butW / 2 + "px";
+				but.style.top = y - butH / 2 + "px";
+				but.style.backgroundPositionX = -(x * beishu - 100) + "px";
+				but.style.backgroundPositionY = -(y * beishu - 100) + "px";
+			};
+		</script>
+	</body>
+</html>

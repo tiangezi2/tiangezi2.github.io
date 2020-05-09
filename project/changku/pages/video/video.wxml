@@ -1,0 +1,27 @@
+<!--pages/video/video.wxml-->
+<wxs src="../../utils/time.wxs" module="time" />
+<video style="width:100%" id="myVideo" src="{{videoData.content_video[0].progressive[3].url}}" controls autoplay="true"></video>
+
+<view class="title">
+  <text style="font-weight: 900;">{{videoData.title}}</text>
+  <view class="cate">
+    <text>#{{videoData.cate[0]}}</text>/
+    <text>{{time.formatTime(videoData.duration)}}</text>
+  </view>
+</view>
+<view class="intro">
+  <text style="color:#666;">{{videoData.intro}}</text>
+</view>
+<view class="intro" wx:for="{{videoData.relate_video}}" style="margin:15px 0 5px 0">
+  <view class="name" style="margin:0 0 10px 0 ">{{item.name}}</view>
+  <view class="list">
+    <view style="width:{{item.list.length*150}}px">
+      <image bindtap="redirectToVideo" data-postid="{{item.postid}}" wx:for="{{item.list}}" class="image" mode="widthFix" src="{{item.image}}">
+        <view class="time">{{time.formatTime(item.duration)}}
+          <view class="brief">{{item.title}}</view>
+        </view>
+
+      </image>
+    </view>
+  </view>
+</view>

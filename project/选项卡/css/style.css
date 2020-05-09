@@ -1,0 +1,132 @@
+header {
+  background: url("../img/e_back.png");
+  background-position: center;
+}
+header span.demo1 {
+  color: white;
+  padding: 20px 5px;
+  float: left;
+  font-weight: bolder;
+  line-height: 24px;
+  font-size: 20px;
+  height: 1000px;
+  word-wrap: break-word;
+  writing-mode: tb-rl;
+  background-color: #666699;
+}
+header span.demo2 {
+  color: white;
+  padding: 20px 5px;
+  float: left;
+  font-weight: bolder;
+  line-height: 24px;
+  font-size: 20px;
+  height: 1000px;
+  word-wrap: break-word;
+  writing-mode: tb-rl;
+  background-color: #660066;
+}
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header div {
+  padding: 100px;
+}
+header div h1 {
+  color: #778899;
+  font-size: 20px;
+  line-height: 40px;
+}
+header div ul {
+  overflow: hidden;
+  position: relative;
+  width: 650px;
+  height: 400px;
+}
+header div ul li:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  transition: all 0.5s;
+  background: url(../img/timg.jpg) no-repeat;
+}
+header div ul li:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  transition: all 0.5s;
+  background: red;
+  opacity: 0.4;
+}
+header div ul li:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  transition: all 0.5s;
+  background: #ffd700;
+  opacity: 0.4;
+}
+header div ul li:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  transition: all 0.5s;
+  background: #adff2f;
+  opacity: 0.4;
+}
+header div ul li:nth-child(5) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  transition: all 0.5s;
+  background: #4169e1;
+  opacity: 0.4;
+}
+header div ul li:nth-child(6) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  transition: all 0.5s;
+  background: #8a2be2;
+  opacity: 0.4;
+}
+header div ul li:nth-child(2).active {
+  transform: rotateZ(-45deg);
+  top: -580px;
+  left: 420px !important;
+}
+header div ul li:nth-child(3).active {
+  transform: rotateZ(-45deg);
+  top: -580px;
+  left: 440px !important;
+}
+header div ul li:nth-child(4).active {
+  transform: rotateZ(-45deg);
+  top: -580px;
+  left: 460px !important;
+}
+header div ul li:nth-child(5).active {
+  transform: rotateZ(-45deg);
+  top: -580px;
+  left: 480px !important;
+}
+header div ul li:nth-child(6).active {
+  transform: rotateZ(-45deg);
+  top: -580px;
+  left: 500px !important;
+}
+/*# sourceMappingURL=./style.css.map */

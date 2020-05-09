@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/channel/channel",
+    "pages/search/search",
+    "pages/recommend/recommend",
+    "pages/video/video",
+    "pages/postincate/postincate",
+    "components/Lastcard/Lastcard"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "场库精选",
+    "navigationBarTextStyle": "white",
+    "onReachBottomDistance": 1850
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#fff",
+    "backgroundColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/channel/channel",
+        "text": "频道"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

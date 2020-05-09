@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "Listcard": "/components/Lastcard/Lastcard"
+  }
+}

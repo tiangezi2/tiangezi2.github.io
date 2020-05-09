@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<style></style>
+	</head>
+	<body>
+		<header>
+			<span class="demo1">demo1</span>
+			<span class="demo2">demo2</span>
+			<div>
+				<h1>Demonstration2</h1>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</header>
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+		<script>
+			var y = 0;
+			var x = 0;
+			for (var i = 0; i < 6; i++) {
+				$("li")
+					.eq(y++)
+					.css(
+						"left",
+						$("li")
+							.eq(x++)
+							.index() *
+							20 +
+							"px"
+					);
+			}
+			$("li").click(function() {
+				var left = parseInt(
+					$(this)
+						.nextAll("li")
+						.css("left")
+				);
+				var top = parseInt(
+					$(this)
+						.nextAll("li")
+						.css("top")
+				);
+				if ($(this).index() == 0) {
+					$(this)
+						.nextAll("li")
+						.addClass("active");
+				} else {
+					if (this.classList.contains("active")) {
+						$(this).removeClass("active");
+						$(this).prevAll("li").removeClass("active")
+					} else {
+						$(this).nextAll("li").addClass("active")
+						$(this).addClass("active")
+					}
+				}
+			});
+		</script>
+	</body>
+</html>

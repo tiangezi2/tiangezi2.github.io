@@ -1,0 +1,282 @@
+div.stage {
+  margin: 0 auto;
+  background-color: lightblue;
+  width: 600px;
+  height: 600px;
+  position: relative;
+}
+div.stage div.newbutton {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  background-color: lightgray;
+  width: 600px;
+  height: 400px;
+}
+div.stage div.newbutton div {
+  transition: all 0.8s;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 50px;
+  width: 30%;
+  height: 50px;
+  background: lightskyblue;
+  margin: 10px 5px 5px 10px;
+  z-index: 1;
+}
+div.stage div.newbutton div::before {
+  transition: all 0.8s;
+  z-index: -1;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+div.stage div.newbutton div:nth-child(1):hover {
+  color: #fff;
+  background: #ff0000;
+  animation: g1 0.8s linear infinite;
+}
+div.stage div.newbutton div:nth-child(2):hover {
+  color: #fff;
+  background: #ff0000;
+  animation: g2 0.8s linear;
+}
+div.stage div.newbutton div:nth-child(3):hover {
+  color: #fff;
+}
+div.stage div.newbutton div:nth-child(3):hover::before {
+  transform: rotateY(0deg);
+}
+div.stage div.newbutton div:nth-child(3)::before {
+  background: #ff0000;
+  transform: rotateY(90deg);
+}
+div.stage div.newbutton div:nth-child(4) {
+  background: #ff0000;
+}
+div.stage div.newbutton div:nth-child(4)::before {
+  transform: scale(1);
+  background: lightskyblue;
+}
+div.stage div.newbutton div:nth-child(4):hover {
+  color: #fff;
+}
+div.stage div.newbutton div:nth-child(4):hover::before {
+  transform: scale(0);
+}
+div.stage div.newbutton div:nth-child(5) i {
+  transition: all 0.8s;
+  color: #000;
+}
+div.stage div.newbutton div:nth-child(5):hover {
+  color: #fff;
+}
+div.stage div.newbutton div:nth-child(5):hover i {
+  transform: rotateZ(360deg);
+  color: #fff;
+}
+div.stage div.newbutton div:nth-child(6):hover {
+  color: #fff;
+}
+div.stage div.newbutton div:nth-child(6):hover::before {
+  border: red 3px solid;
+  top: -12px;
+  right: -12px;
+  bottom: -12px;
+  left: -12px;
+  opacity: 0;
+  transition: all 0.8s;
+}
+div.stage div.newbutton div:nth-child(6)::before {
+  transition: none;
+  border: lightskyblue 3px solid;
+}
+div.stage div.newbutton div:nth-child(7):hover {
+  color: #fff;
+  transform: translateY(-10px);
+}
+div.stage div.newbutton div:nth-child(7):hover::before {
+  transform: translateY(15px);
+  opacity: 1;
+}
+div.stage div.newbutton div:nth-child(7)::before {
+  transform: translateY(5px);
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+}
+div.stage div.newbutton div:nth-child(8):hover {
+  color: #fff;
+  transform: translateY(-10px);
+}
+div.stage div.newbutton div:nth-child(8):hover::before {
+  transform: translateY(20px);
+}
+div.stage div.newbutton div:nth-child(8)::before {
+  transform: translateY(10px);
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border: 40px solid;
+  border-color: lightskyblue transparent transparent transparent;
+}
+div.stage div.newbutton div:nth-child(9)::before {
+  top: auto;
+  height: 0;
+  width: 0;
+  background: linear-gradient(45deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+}
+div.stage div.newbutton div:nth-child(9):hover {
+  color: #fff;
+}
+div.stage div.newbutton div:nth-child(9):hover::before {
+  width: 25px;
+  height: 25px;
+}
+ul.subject {
+  margin: 0;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  background-color: lightcoral;
+}
+ul.subject::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ul.subject li {
+  width: 200px;
+  float: left;
+  background-color: lightgreen;
+  outline: white solid 1px;
+}
+ul.ghost {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  line-height: 50px;
+  background-color: lightseagreen;
+  list-style: none;
+  margin-top: 1px;
+  padding-bottom: 15px;
+}
+ul.ghost::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ul.ghost li {
+  float: left;
+  width: 200px;
+  outline: white solid 1px;
+  position: relative;
+}
+.ghost li:nth-child(2) {
+  background: orange;
+  overflow: hidden;
+}
+.ghost li:nth-child(2) .circle {
+  width: 300px;
+  height: 300px;
+  background: lightseagreen;
+  border-radius: 50%;
+  transition: transform 0.5s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scale(0);
+  opacity: 0;
+}
+.ghost li:nth-child(2).active .circle {
+  transform: scale(1);
+  opacity: 1;
+}
+label.active {
+  display: none;
+}
+.triangle {
+  margin: 0 auto;
+  margin-top: -23px;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #ff0000;
+}
+div.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0px;
+  background: blue;
+}
+div.botton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 5px;
+  width: 0px;
+  background: blue;
+}
+div.left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0px;
+  width: 5px;
+  background: blue;
+}
+div.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 0px;
+  width: 5px;
+  background: blue;
+}
+@keyframes g1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes g2 {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(6px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

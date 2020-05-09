@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<style>
+			body {
+				background: lightskyblue;
+			}
+			div.fate {
+				position: relative;
+				width: 1000px;
+				overflow: hidden;
+				margin: 0 auto;
+			}
+			div.fate img {
+				vertical-align: middle;
+				position: absolute;
+				width: 80%;
+				top: 0;
+				left: 0;
+				transition: all 1s;
+			}
+			div.fate img:first-child {
+				position: static;
+			}
+			div.name {
+				text-align: center;
+				margin: 50px;
+				position: relative;
+			}
+			div.name h1 {
+				color: gold;
+				margin: 10px;
+				display: inline-block;
+				position: relative;
+				top: 0;
+				left: -800px;
+			}
+			div.name h1.active {
+				display: inline-block;
+				position: relative;
+				top: 0;
+				left: 0;
+				transform: rotateZ(3600deg);
+				transition: all 5s;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="name">
+			<h1 class="dong">冲</h1>
+			<h1 class="dong">田</h1>
+			<h1 class="dong">总</h1>
+			<h1 class="dong">司</h1>
+		</div>
+		<div class="fate">
+			<img src="./img/1.jpg" alt="" />
+			<img src="./img/2.jpg" alt="" />
+			<img src="./img/3.jpg" alt="" />
+			<img src="./img/4.jpg" alt="" />
+			<img src="./img/5.jpg" alt="" />
+		</div>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+		<script>
+			var imgs = document.querySelectorAll(".fate img");
+			var fate = document.querySelector(".fate");
+			imgs.forEach(function(element, index) {
+				imgs[index].style.left = (100 / imgs.length) * index + "%";
+				element.onmouseover = function() {
+					imgs.forEach(function(img, i) {
+						if (i <= index) {
+							img.style.left = i * ((fate.offsetWidth - imgs[0].offsetWidth) / (imgs.length - 1)) + "px";
+						} else {
+							img.style.left =
+								(i - 1) * ((fate.offsetWidth - imgs[0].offsetWidth) / (imgs.length - 1)) +
+								imgs[0].offsetWidth +
+								"px";
+						}
+					});
+				};
+				element.onmouseout = function() {
+					imgs.forEach(function(img, i) {
+						imgs[i].style.left = (100 / imgs.length) * i + "%";
+					});
+				};
+			});
+
+			var boxs = document.querySelectorAll(".dong");
+			document.body.onscroll = function() {
+				for (var i = 0; i < boxs.length; i++) {
+					if (window.pageYOffset > boxs[i].offsetTop - (window.innerHeight - boxs[i].offsetHeight)) {
+						boxs[i].classList.add("active");
+					} else {
+						boxs[i].classList.remove("active");
+					}
+				}
+			};
+			window.scrollTo(0, 1);
+		</script>
+	</body>
+</html>

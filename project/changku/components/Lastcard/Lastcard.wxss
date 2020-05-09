@@ -1,0 +1,18 @@
+/* components/Lastcard/Lastcard.wxss */
+
+.card {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  color: white;
+}
+
+image {
+  vertical-align: middle;
+}
+
+

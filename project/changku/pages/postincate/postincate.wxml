@@ -1,0 +1,3 @@
+<!--pages/postincate/postincate.wxml-->
+<!-- <text>pages/postincate/postincate.wxml</text> -->
+<Lastcard wx:for="{{postInCateData}}" item="{{item}}"></Lastcard>

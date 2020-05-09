@@ -1,0 +1,26 @@
+/* pages/channel/channel.wxss */
+
+.listData {
+  background: #999;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.img {
+  width: 50%;
+  position: relative;
+}
+
+.text {
+  word-wrap: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-16px, -16px);
+  border-bottom: 3px solid white;
+}
+
+.name {
+  color: white;
+  font-size: 16px;
+}

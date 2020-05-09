@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<style>
+			h1{
+				color: lightpink;
+				text-align: center;
+				font-weight: 600;
+			}
+			.background {
+				background: url("./img/turntable-bg.jpg") no-repeat;
+				width: 650px;
+				height: 600px;
+				margin: 0 auto;
+				position: relative;
+			}
+
+			img {
+				position: absolute;
+			}
+
+			.dish {
+				top: 59px;
+				left: 115px;
+			}
+
+			.click {
+				top: 160px;
+				left: 260px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>爱的魔力转圈圈</h1>
+		<div class="background">
+			<img class="dish" src="./img/turntable.png" alt=" " />
+			<img class="click" src="./img/pointer.png" alt="" />
+		</div>
+
+		<script>
+			var dish = document.querySelector(".dish");
+			var click = document.querySelector(".click");
+
+			function probability() {
+				return Math.floor(Math.random() * 100);
+			}
+			function cold(x) {
+				if (x < 3) {
+					return { num: 1, text: "抽到就是赚到" };
+				} else if (x < 8) {
+					return { num: 2, text: "这个也不错" };
+				} else if (x < 15) {
+					return { num: 3, text: "基本没什么用" };
+				} else if (x < 25) {
+					return { num: 4, text: "不如不抽" };
+				} else if (x < 40) {
+					return { num: 5, text: "心态爆炸" };
+				} else if (x < 65) {
+					return { num: 6, text: "血亏" };
+				} else {
+					return { num: 7, text: "什么手气？？？" };
+				}
+			}
+
+			function whirl(index) {
+				var x = 30 + (360 / 7) * (index.num - 1);
+				dish.style.transition = "all 3s";
+				dish.style.transform = "rotate(" + (x + 3600) + "deg )";
+
+				setTimeout(function() {
+					dish.style.transition = "none";
+					dish.style.transform = "rotate(" + x + "deg )";
+					alert(index.text);
+					click.style.pointerEvents='auto';
+				}, 3500);
+			}
+
+			click.onclick = function() {
+				click.style.pointerEvents='none';
+				var sum = probability();
+				var code = cold(sum);
+				console.log(sum, code);
+				whirl(code);
+			};
+		</script>
+	</body>
+</html>
